@@ -1,0 +1,148 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 70%;
+	width: 450px;
+	height: 450px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	/* background: linear-gradient(to top right, darkmagenta 0%, hotpink 100%); */
+	color: #333;
+	/* font-family: "Lucida Grande", Helvetica, Arial, sans-serif; */
+	/* Helps to add a gradient box border color - Sahi hai beta !!*/
+	/* border: 1px solid red;
+	-moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	-webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+	border-image-slice: 1; */
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.frame1 {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	width: 900px;
+	height: 450px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: linear-gradient(to top right, darkmagenta 0%, hotpink 100%);
+	color: #333;
+	font-family: "Open Sans", Helvetica, sans-serif;
+	/* Helps to add a gradient box border color - Sahi hai beta !!*/
+	/* border: 1px solid red;
+	-moz-border-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	-webkit-border-image: -webkit-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
+	border-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%);
+	border-image-slice: 1; */
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 260px;
+	border-radius: 3px;
+	box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.2);
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	
+}
+
+.title {
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #0F9D58;
+	text-align: center;
+}
+
+/* h1 {
+	margin: 0 0 20px 0;
+	font-weight: 300;
+	font-size: 28px;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #0F9D58;
+} */
+
+
+.dropzone {
+	width: 200px;
+	height: 100px;
+	border: 1px dashed #999;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.upload-icon {
+	margin: 50px 1px 1px 1px;
+}
+
+.upload-input {
+	position: relative;
+	top: -62px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 5;
+}
+
+.btn {
+	display: relative;
+	margin: 85% 50% 50% 35%;
+	width: 140px;
+	height: 40px;
+	background: rgb(0, 111, 139);
+	color: #fff;
+	border-radius: 3px;
+	border: 0;
+	box-shadow: 0 3px 0 0 hotpink;
+	transition: all 0.3s ease-in-out;
+	font-size: 14px;
+	text-align: center;
+
+}
+
+.btn:hover {
+	background: rebeccapurple;
+	box-shadow: 0 3px 0 0 deeppink;
+}
+
+
+input{
+	font-size: 10px;
+	color:red;
+	text-align: center;
+}
+
+
+input.file
+{
+    position: relative;
+    height: 100%;
+    width: auto;
+    opacity: 1;
+}
+
+
+.navigation{
+	color: #0F9D58;
+}
+
+
+.drop {
+	font: 25px "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #0F9D58;
+}

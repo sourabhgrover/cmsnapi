@@ -1,0 +1,26 @@
+<form action="/signup" method="POST" id="form-container">
+  <div id="login-box">
+    <div class="left">
+      <h1>Join CloudBox</h1>
+
+      <input type="text" name="username"  placeholder="Choose your Username" />
+      <input type="text" name="email" placeholder="Enter your Email Address" />
+      <input type="password" name="password" placeholder="Choose a password" />
+      <input type="password" name="password2" placeholder="Retype password" />
+      <input type="submit" name="signup_submit" value="Sign me up" />      
+      {{#if message}}
+      <div class="error-message">{{ message }}</div>
+      {{/if}}
+      <br><br>
+    </div>
+
+    <div class="right">
+      <span class="loginwith">Sign in with<br />social network</span>
+      <button class="social-signin username"><a class="socialsigninbtn" href="/login">Login With Username</a></button>
+      <a href="/auth/google">
+      <img src ="images/google.png">
+      </a>
+    </div>
+    <div class="or">OR</div>
+  </div>
+</form>

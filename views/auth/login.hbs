@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="/stylesheets/login.css" />
+
+<form action="/login" method="POST" id="form-container">
+  <div id="login-box">
+    <div class="left">
+      <h1>Login into CloudBox</h1>
+      <input type="text" name="username"  placeholder="Enter your username" />
+      <input type="password" name="password" placeholder="Enter your password" />
+      <input type="submit" name="signup_submit" value="Log In" />      
+      {{#if message}}
+      <div class="error-message">{{ message }}</div>
+      {{/if}}
+      <br><br>
+    </div>
+  </div>
+</form>

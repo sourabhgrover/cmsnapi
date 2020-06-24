@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="/stylesheets/photo.css" />
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href=""></a><h1>CloudBox</h1></a>
+
+  <div class="collapse navbar-collapse navbar-brand" id="navbarNavAltMarkup">
+    <div class="navbar-nav flex-row ml-md-auto d-non d-md-flex">
+      <a class="nav-item nav-link active" href="/myaccount" style="color:#0F9D58;">My Account | </a>
+      <a class="nav-item nav-link" href="/upload" style="color:#0F9D58;">Upload Photos | </a>
+      <a class="nav-item nav-link" href="/logout" style="color:#0F9D58;">Logout</a>
+    </div>
+  </div>
+</nav>
+
+  <div class="col-md-12 d-flex justify-content-center mb-6 fbutton">
+    <button type="button" class="border-3 rounded-0 btn-lg btn-outline-dark waves-effect filter mr-1" data-rel="all">All</button>
+    <button type="button" class="border-3 rounded-0 btn-lg btn-outline-dark waves-effect filter mr-1" data-rel="1">Nature</button>
+    <button type="button" class="border-3 rounded-0 btn-lg btn-outline-dark waves-effect filter mr-1" data-rel="2">Architecture</button>
+    <button type="button" class="border-3 rounded-0 btn-lg btn-outline-dark waves-effect filter mr-1" data-rel="2">Landscape</button>
+  </div>
+
+
+
+<div id ="copyButton" class="container">
+    <div  class="row">
+        {{#each photos}}
+        <div id ='divname-{{id}}'class="card bg-white m-5 h-100 border-0" style="width: 250px">
+            <figure>
+                <img class="card-img-top beerimage card-img-left zoom" src={{this.imgPath}} alt="" class="img-fluid">
+                <div class="card-header border-0 bg-dark text-light text-small" align="center">
+                    <div class="bg-dark" align="center"><a href="{{this.imgPath}}" download="{{this.originalname}}">
+                        <button class="btn cbtn"><i class="fa fa-download"></i></button></a>
+                        <button id = "copyLinkBtn" class= "copybtn btn cbtn"><i class="fa fa-copy"></i></button>
+                        <textarea id = "linkText" class="copytextarea" style="display:none;">{{this.imgPath}}</textarea>
+                        <button id="trash" class="btn cbtn"><i class="fa fa-trash"></i></button>
+                    </div>
+                </div>
+        </div>
+        </figure>
+
+        {{/each}}
+    </div>
+</div>

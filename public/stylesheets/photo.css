@@ -1,0 +1,67 @@
+.beerimage { 
+    width: 250px; 
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /* Style buttons */
+.cbtn {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.zoom {
+  background-color: white;
+  transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(1.75); 
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+#photolink {
+  display: none;
+}
+
+
+@media (max-width: 400px) {
+  .fbtn .filter {
+  padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  }
+  }
+
+
+
+  
+.border-3 {
+    border-width:3px !important;
+}
+
+.fbutton{
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+
+.navbar-items{
+  float: left;
+  align: right;
+}
