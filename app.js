@@ -12,14 +12,12 @@ const bcrypt        = require('bcrypt')
 const session       = require('express-session')
 const passport      = require('passport')
 const LocalStrategy = require('passport-local').Strategy
-const User          = require('./models/user')
 const flash         = require('connect-flash');
 const SlackStrategy = require("passport-slack").Strategy
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
-const photo     = require('./models/photo')
 
 mongoose
-  .connect('mongodb+srv://mayank:residency18@cluster0-pu5tf.azure.mongodb.net/photobook', {useNewUrlParser: true})
+  .connect('mongodb+srv://mayank:residency18@cluster0-pu5tf.azure.mongodb.net/usermgmt', {useNewUrlParser: true})
   .then(x => {
     console.log(`Connected to Mongo! Database name: "${x.connections[0].name}"`)
   })
@@ -216,7 +214,7 @@ const uploader = new Multer({
 
 //const index = require('./routes/index');
 
-const router = require('./routes/auth-routes')
+const router = require('./routes/User')
 app.use('/', router);
 
 
